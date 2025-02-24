@@ -56,19 +56,19 @@ PORT=5000
 
 1. **Start the Backend Server:**  
 ```sh
-cd server
-npm start
+cd backend
+npm run dev
 ```
 
 2. **Start the Frontend Development Server:**  
 ```sh
-cd ../client
-npm start
+cd frontend
+npm run dev
 ```
 
 3. **Open in Browser:**  
 ```
-http://localhost:3000
+http://localhost:5173
 ```
 
 ---
