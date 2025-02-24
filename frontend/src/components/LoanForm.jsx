@@ -19,7 +19,7 @@ const LoanForm = ({ setSchedule }) => {
     e.preventDefault();
     console.log("Sending request with:", loanDetails);
     try {
-        const res = await axios.post('http://localhost:5000/api/calculate', loanDetails);
+        const res = await axios.post('https://loan-repayment-scheduler-u8dp.onrender.com/api/calculate', loanDetails);
         console.log("Response:", res.data);
         setSchedule(res.data.schedule);
     } catch (err) {
