@@ -6,17 +6,17 @@ import axios from 'axios';
 const ExportButton = ({ schedule }) => {
     const handleExport = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/api/export-pdf', 
-                { schedule }, // Send schedule in the request body
+            const response = await axios.post('https://loan-repayment-scheduler-u8dp.onrender.com/api/export-pdf', 
+                { schedule }, 
                 {
-                    responseType: 'blob', // This is important for downloading files
+                    responseType: 'blob', 
                     headers: {
                         'Content-Type': 'application/json',
                     },
                 }
             );
 
-            // Create a URL for the blob and download the file
+           
             const url = window.URL.createObjectURL(new Blob([response.data]));
             const link = document.createElement('a');
             link.href = url;
