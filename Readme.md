@@ -40,7 +40,7 @@ cd frontend
 npm install
 
 # Backend
-cd ../backend
+cd backend
 npm install
 ```
 
@@ -116,7 +116,7 @@ This project is licensed under the MIT License.
 
 ### Contact  
 - **Author:** Chandan  
-- **Email:** chandannekya@gmaul.com 
+- **Email:** chandannekya@gmail.com 
 - **GitHub:** [chandannekya](https://github.com/chandannekya)  
 
 ---
